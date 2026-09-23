@@ -41,7 +41,7 @@ export default function Dashboard() {
       return;
     }
     fetchData();
-    const interval = setInterval(fetchData, 3000); // Poll every 3s
+    const interval = setInterval(fetchData, 10000); // Poll every 13s
     return () => clearInterval(interval);
   }, [navigate]);
 
